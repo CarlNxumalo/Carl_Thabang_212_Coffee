@@ -17,4 +17,6 @@ namespace Carl_Thabang_212_Coffee
             InitializeComponent();
         }
     }
+    //center image 
+    
 }
