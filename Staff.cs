@@ -10,18 +10,11 @@ using System.Windows.Forms;
 
 namespace Carl_Thabang_212_Coffee
 {
-    public partial class Welcome : Form
+    public partial class Staff : Form
     {
-        public Welcome()
+        public Staff()
         {
             InitializeComponent();
         }
-
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-    //center image 
-    
 }

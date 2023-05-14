@@ -52,6 +52,7 @@ namespace Carl_Thabang_212_Coffee
             this.btnLogin.TabIndex = 1;
             this.btnLogin.Text = "Staff/Login";
             this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Welcome
             // 
