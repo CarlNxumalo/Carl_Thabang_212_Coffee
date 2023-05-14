@@ -12,6 +12,8 @@ namespace Carl_Thabang_212_Coffee
 {
     public partial class Staff : Form
     {
+        //fix image size
+        
         public Staff()
         {
             InitializeComponent();
@@ -20,6 +22,11 @@ namespace Carl_Thabang_212_Coffee
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();//cl
         }
     }
 }
