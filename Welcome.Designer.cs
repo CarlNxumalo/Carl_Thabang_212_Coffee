@@ -30,14 +30,38 @@ namespace Carl_Thabang_212_Coffee
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
+            this.btnOrder = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnOrder
+            // 
+            this.btnOrder.Location = new System.Drawing.Point(450, 456);
+            this.btnOrder.Name = "btnOrder";
+            this.btnOrder.Size = new System.Drawing.Size(237, 84);
+            this.btnOrder.TabIndex = 0;
+            this.btnOrder.Text = "Order";
+            this.btnOrder.UseVisualStyleBackColor = true;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Location = new System.Drawing.Point(973, 21);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(125, 41);
+            this.btnLogin.TabIndex = 1;
+            this.btnLogin.Text = "Staff/Login";
+            this.btnLogin.UseVisualStyleBackColor = true;
             // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1182, 751);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1127, 751);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.btnOrder);
+            this.DoubleBuffered = true;
             this.Name = "Welcome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome";
@@ -46,5 +70,8 @@ namespace Carl_Thabang_212_Coffee
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnOrder;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
