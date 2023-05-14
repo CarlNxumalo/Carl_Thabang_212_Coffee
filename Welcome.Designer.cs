@@ -43,6 +43,7 @@ namespace Carl_Thabang_212_Coffee
             this.btnOrder.TabIndex = 0;
             this.btnOrder.Text = "Order Now";
             this.btnOrder.UseVisualStyleBackColor = true;
+            this.btnOrder.Click += new System.EventHandler(this.btnOrder_Click);
             // 
             // btnLogin
             // 
