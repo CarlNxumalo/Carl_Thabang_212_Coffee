@@ -16,5 +16,10 @@ namespace Carl_Thabang_212_Coffee
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
