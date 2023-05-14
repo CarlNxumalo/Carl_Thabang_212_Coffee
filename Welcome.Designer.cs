@@ -36,11 +36,12 @@ namespace Carl_Thabang_212_Coffee
             // 
             // btnOrder
             // 
-            this.btnOrder.Location = new System.Drawing.Point(450, 456);
+            this.btnOrder.Font = new System.Drawing.Font("Palatino Linotype", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOrder.Location = new System.Drawing.Point(411, 450);
             this.btnOrder.Name = "btnOrder";
-            this.btnOrder.Size = new System.Drawing.Size(237, 84);
+            this.btnOrder.Size = new System.Drawing.Size(312, 97);
             this.btnOrder.TabIndex = 0;
-            this.btnOrder.Text = "Order";
+            this.btnOrder.Text = "Order Now";
             this.btnOrder.UseVisualStyleBackColor = true;
             // 
             // btnLogin
