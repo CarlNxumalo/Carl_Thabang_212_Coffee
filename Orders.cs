@@ -12,9 +12,50 @@ namespace Carl_Thabang_212_Coffee
 {
     public partial class Orders : Form
     {
+        decimal price = 0m;
+
         public Orders()
         {
             InitializeComponent();
+
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+           if(tabControl1.SelectedIndex != 0)
+            {
+                tabControl1.TabIndex--;
+            }
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            if (tabControl1.SelectedIndex != tabControl1.TabIndex-1)
+            {
+                tabControl1.TabIndex++;
+            }
+
+            btnPrevious.Enabled = true;
+        }
+
+        private void Orders_Load(object sender, EventArgs e)
+        {
+            btnPrevious.Enabled = false;
+        }
+
+        private void cart(decimal price)
+        {
+            lstOrders.Items.Add("Americano" + "\t" + price.ToString("C"));
+        }
+
+        private void pbAmericano_Click(object sender, EventArgs e)
+        {
+            cart(30.90m);
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            lstOrders.Items.RemoveAt(lstOrders.SelectedIndex);
         }
     }
 }
