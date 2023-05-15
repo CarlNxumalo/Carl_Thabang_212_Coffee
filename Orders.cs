@@ -43,10 +43,19 @@ namespace Carl_Thabang_212_Coffee
             btnPrevious.Enabled = false;
         }
 
+        private void cart(decimal price)
+        {
+            lstOrders.Items.Add("Americano" + "\t" + price.ToString("C"));
+        }
+
         private void pbAmericano_Click(object sender, EventArgs e)
         {
-           
-            
+            cart(30.90m);
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            lstOrders.Items.RemoveAt(lstOrders.SelectedIndex);
         }
     }
 }

@@ -223,7 +223,7 @@ namespace Carl_Thabang_212_Coffee
             this.label70.Name = "label70";
             this.label70.Size = new System.Drawing.Size(54, 17);
             this.label70.TabIndex = 65;
-            this.label70.Text = "label46";
+            this.label70.Text = "R28,99";
             // 
             // label69
             // 
@@ -232,7 +232,7 @@ namespace Carl_Thabang_212_Coffee
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(54, 17);
             this.label69.TabIndex = 64;
-            this.label69.Text = "label46";
+            this.label69.Text = "R31,21";
             // 
             // label68
             // 
@@ -241,7 +241,7 @@ namespace Carl_Thabang_212_Coffee
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(54, 17);
             this.label68.TabIndex = 63;
-            this.label68.Text = "label46";
+            this.label68.Text = "R34,50";
             // 
             // label67
             // 
@@ -250,7 +250,7 @@ namespace Carl_Thabang_212_Coffee
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(54, 17);
             this.label67.TabIndex = 62;
-            this.label67.Text = "label46";
+            this.label67.Text = "R37,45";
             // 
             // label66
             // 
@@ -309,7 +309,7 @@ namespace Carl_Thabang_212_Coffee
             this.lblAmeriPrice.Name = "lblAmeriPrice";
             this.lblAmeriPrice.Size = new System.Drawing.Size(54, 17);
             this.lblAmeriPrice.TabIndex = 56;
-            this.lblAmeriPrice.Text = "label46";
+            this.lblAmeriPrice.Text = "R30,90";
             // 
             // lblAmeriDescrip
             // 
@@ -1255,9 +1255,9 @@ namespace Carl_Thabang_212_Coffee
             this.label53.Font = new System.Drawing.Font("Bauhaus 93", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label53.Location = new System.Drawing.Point(22, 14);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(418, 43);
+            this.label53.Size = new System.Drawing.Size(464, 43);
             this.label53.TabIndex = 38;
-            this.label53.Text = "Select order to Remove:";
+            this.label53.Text = "Confirm or Remove orders:";
             // 
             // btnRemove
             // 
@@ -1267,6 +1267,7 @@ namespace Carl_Thabang_212_Coffee
             this.btnRemove.TabIndex = 1;
             this.btnRemove.Text = "Remove order";
             this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // lstOrders
             // 
