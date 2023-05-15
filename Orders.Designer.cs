@@ -127,6 +127,11 @@ namespace Carl_Thabang_212_Coffee
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -163,12 +168,17 @@ namespace Carl_Thabang_212_Coffee
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1448, 690);
+            this.tabControl1.Size = new System.Drawing.Size(1582, 690);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
+            this.tabPage1.Controls.Add(this.label70);
+            this.tabPage1.Controls.Add(this.label69);
+            this.tabPage1.Controls.Add(this.label68);
+            this.tabPage1.Controls.Add(this.label67);
+            this.tabPage1.Controls.Add(this.label66);
             this.tabPage1.Controls.Add(this.label47);
             this.tabPage1.Controls.Add(this.label46);
             this.tabPage1.Controls.Add(this.label40);
@@ -199,7 +209,7 @@ namespace Carl_Thabang_212_Coffee
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1440, 661);
+            this.tabPage1.Size = new System.Drawing.Size(1574, 661);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Coffee";
             // 
@@ -264,7 +274,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Bauhaus 93", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(1159, 87);
+            this.label25.Location = new System.Drawing.Point(1108, 87);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(131, 28);
             this.label25.TabIndex = 50;
@@ -294,7 +304,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(1329, 192);
+            this.label9.Location = new System.Drawing.Point(1278, 291);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(50, 17);
             this.label9.TabIndex = 30;
@@ -304,7 +314,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(1329, 137);
+            this.label10.Location = new System.Drawing.Point(1278, 137);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(95, 17);
             this.label10.TabIndex = 29;
@@ -314,7 +324,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(1120, 137);
+            this.pictureBox1.Location = new System.Drawing.Point(1069, 137);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(203, 192);
             this.pictureBox1.TabIndex = 28;
@@ -344,7 +354,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(757, 478);
+            this.label5.Location = new System.Drawing.Point(757, 554);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(50, 17);
             this.label5.TabIndex = 25;
@@ -363,9 +373,10 @@ namespace Carl_Thabang_212_Coffee
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(757, 291);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
+            this.label3.Size = new System.Drawing.Size(50, 17);
             this.label3.TabIndex = 23;
             this.label3.Text = "Price:";
             // 
@@ -413,7 +424,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Bauhaus 93", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(522, 13);
+            this.label13.Location = new System.Drawing.Point(579, 3);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(156, 49);
             this.label13.TabIndex = 18;
@@ -472,7 +483,7 @@ namespace Carl_Thabang_212_Coffee
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1440, 661);
+            this.tabPage2.Size = new System.Drawing.Size(1574, 661);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tea";
             // 
@@ -510,7 +521,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Bauhaus 93", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(328, 88);
+            this.label16.Location = new System.Drawing.Point(65, 104);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(118, 28);
             this.label16.TabIndex = 71;
@@ -519,54 +530,60 @@ namespace Carl_Thabang_212_Coffee
             // label19
             // 
             this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.Location = new System.Drawing.Point(490, 479);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(44, 17);
+            this.label19.Size = new System.Drawing.Size(50, 17);
             this.label19.TabIndex = 67;
             this.label19.Text = "Price:";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.Location = new System.Drawing.Point(490, 424);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(83, 17);
+            this.label20.Size = new System.Drawing.Size(95, 17);
             this.label20.TabIndex = 66;
             this.label20.Text = "Description:";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(948, 479);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(44, 17);
+            this.label21.Size = new System.Drawing.Size(50, 17);
             this.label21.TabIndex = 65;
             this.label21.Text = "Price:";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label22.Location = new System.Drawing.Point(948, 424);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(83, 17);
+            this.label22.Size = new System.Drawing.Size(95, 17);
             this.label22.TabIndex = 64;
             this.label22.Text = "Description:";
             // 
             // label55
             // 
             this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.Location = new System.Drawing.Point(948, 209);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(44, 17);
+            this.label55.Size = new System.Drawing.Size(50, 17);
             this.label55.TabIndex = 63;
             this.label55.Text = "Price:";
             // 
             // label56
             // 
             this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label56.Location = new System.Drawing.Point(948, 154);
             this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(83, 17);
+            this.label56.Size = new System.Drawing.Size(95, 17);
             this.label56.TabIndex = 62;
             this.label56.Text = "Description:";
             // 
@@ -613,18 +630,20 @@ namespace Carl_Thabang_212_Coffee
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(490, 209);
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(227, 225);
             this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(44, 17);
+            this.label58.Size = new System.Drawing.Size(50, 17);
             this.label58.TabIndex = 57;
             this.label58.Text = "Price:";
             // 
             // label59
             // 
             this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(490, 154);
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(227, 170);
             this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(83, 17);
+            this.label59.Size = new System.Drawing.Size(95, 17);
             this.label59.TabIndex = 56;
             this.label59.Text = "Description:";
             // 
@@ -632,7 +651,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.pbBlackTea.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbBlackTea.BackgroundImage")));
             this.pbBlackTea.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbBlackTea.Location = new System.Drawing.Point(281, 138);
+            this.pbBlackTea.Location = new System.Drawing.Point(18, 154);
             this.pbBlackTea.Name = "pbBlackTea";
             this.pbBlackTea.Size = new System.Drawing.Size(203, 192);
             this.pbBlackTea.TabIndex = 55;
@@ -668,7 +687,7 @@ namespace Carl_Thabang_212_Coffee
             this.tabPage3.Controls.Add(this.pbCroissant);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1440, 661);
+            this.tabPage3.Size = new System.Drawing.Size(1574, 661);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pastries";
             // 
@@ -685,18 +704,20 @@ namespace Carl_Thabang_212_Coffee
             // label61
             // 
             this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label61.Location = new System.Drawing.Point(1110, 476);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(44, 17);
+            this.label61.Size = new System.Drawing.Size(50, 17);
             this.label61.TabIndex = 78;
             this.label61.Text = "Price:";
             // 
             // label62
             // 
             this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label62.Location = new System.Drawing.Point(1110, 421);
             this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(83, 17);
+            this.label62.Size = new System.Drawing.Size(95, 17);
             this.label62.TabIndex = 77;
             this.label62.Text = "Description:";
             // 
@@ -763,18 +784,20 @@ namespace Carl_Thabang_212_Coffee
             // label29
             // 
             this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label29.Location = new System.Drawing.Point(1110, 204);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(44, 17);
+            this.label29.Size = new System.Drawing.Size(50, 17);
             this.label29.TabIndex = 70;
             this.label29.Text = "Price:";
             // 
             // label30
             // 
             this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label30.Location = new System.Drawing.Point(1110, 149);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(83, 17);
+            this.label30.Size = new System.Drawing.Size(95, 17);
             this.label30.TabIndex = 69;
             this.label30.Text = "Description:";
             // 
@@ -791,54 +814,60 @@ namespace Carl_Thabang_212_Coffee
             // label31
             // 
             this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label31.Location = new System.Drawing.Point(241, 490);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(44, 17);
+            this.label31.Size = new System.Drawing.Size(50, 17);
             this.label31.TabIndex = 67;
             this.label31.Text = "Price:";
             // 
             // label32
             // 
             this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label32.Location = new System.Drawing.Point(241, 435);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(83, 17);
+            this.label32.Size = new System.Drawing.Size(95, 17);
             this.label32.TabIndex = 66;
             this.label32.Text = "Description:";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.Location = new System.Drawing.Point(699, 490);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(44, 17);
+            this.label33.Size = new System.Drawing.Size(50, 17);
             this.label33.TabIndex = 65;
             this.label33.Text = "Price:";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label34.Location = new System.Drawing.Point(699, 435);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(83, 17);
+            this.label34.Size = new System.Drawing.Size(95, 17);
             this.label34.TabIndex = 64;
             this.label34.Text = "Description:";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(699, 220);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(44, 17);
+            this.label35.Size = new System.Drawing.Size(50, 17);
             this.label35.TabIndex = 63;
             this.label35.Text = "Price:";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label36.Location = new System.Drawing.Point(699, 165);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(83, 17);
+            this.label36.Size = new System.Drawing.Size(95, 17);
             this.label36.TabIndex = 62;
             this.label36.Text = "Description:";
             // 
@@ -885,18 +914,20 @@ namespace Carl_Thabang_212_Coffee
             // label38
             // 
             this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label38.Location = new System.Drawing.Point(241, 220);
             this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(44, 17);
+            this.label38.Size = new System.Drawing.Size(50, 17);
             this.label38.TabIndex = 57;
             this.label38.Text = "Price:";
             // 
             // label39
             // 
             this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label39.Location = new System.Drawing.Point(241, 165);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(83, 17);
+            this.label39.Size = new System.Drawing.Size(95, 17);
             this.label39.TabIndex = 56;
             this.label39.Text = "Description:";
             // 
@@ -931,7 +962,7 @@ namespace Carl_Thabang_212_Coffee
             this.tabPage4.Controls.Add(this.pbGrilled);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1440, 661);
+            this.tabPage4.Size = new System.Drawing.Size(1565, 661);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Sandwiches";
             // 
@@ -1075,7 +1106,7 @@ namespace Carl_Thabang_212_Coffee
             this.tabPage5.Controls.Add(this.lstOrders);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1440, 661);
+            this.tabPage5.Size = new System.Drawing.Size(1565, 661);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Cart";
             // 
@@ -1150,11 +1181,9 @@ namespace Carl_Thabang_212_Coffee
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(847, 423);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(221, 102);
+            this.label47.Size = new System.Drawing.Size(291, 102);
             this.label47.TabIndex = 60;
-            this.label47.Text = "Savor the simple pleasure of our\r\ndrip coffee, expertly brewed to\r\nperfection. Wi" +
-    "th each cup, enjoy\r\na smooth and flavorful experience\r\nthat captures the essence" +
-    " of\r\nfreshly brewed coffee beans.";
+            this.label47.Text = resources.GetString("label47.Text");
             // 
             // label63
             // 
@@ -1184,12 +1213,59 @@ namespace Carl_Thabang_212_Coffee
             this.label65.TabIndex = 95;
             this.label65.Text = resources.GetString("label65.Text");
             // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Location = new System.Drawing.Point(1370, 137);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(207, 102);
+            this.label66.TabIndex = 61;
+            this.label66.Text = "Experience the perfect blend\r\nof rich espresso, steamed milk, \r\nand frothed milk " +
+    "in our velvety\r\nsmooth cappuccino. Satisfy \r\nyour coffee cravings with this\r\ncla" +
+    "ssic favorite.";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(847, 291);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(54, 17);
+            this.label67.TabIndex = 62;
+            this.label67.Text = "label46";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(1370, 291);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(54, 17);
+            this.label68.TabIndex = 63;
+            this.label68.Text = "label46";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(306, 554);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(54, 17);
+            this.label69.TabIndex = 64;
+            this.label69.Text = "label46";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(847, 554);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(54, 17);
+            this.label70.TabIndex = 65;
+            this.label70.Text = "label46";
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
-            this.ClientSize = new System.Drawing.Size(1460, 824);
+            this.ClientSize = new System.Drawing.Size(1605, 824);
             this.Controls.Add(this.btnPrevious);
             this.Controls.Add(this.btnNext);
             this.Controls.Add(this.tabControl1);
@@ -1327,5 +1403,10 @@ namespace Carl_Thabang_212_Coffee
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label67;
     }
 }
