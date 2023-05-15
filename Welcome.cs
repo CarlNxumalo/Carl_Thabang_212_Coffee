@@ -24,7 +24,9 @@ namespace Carl_Thabang_212_Coffee
 
         private void btnOrder_Click(object sender, EventArgs e)
         {
+            Orders customerOrder = new Orders();
 
+            customerOrder.ShowDialog();
         }
     }
     //center image 
