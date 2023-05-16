@@ -1299,6 +1299,7 @@ namespace Carl_Thabang_212_Coffee
             this.pictureBox5.Size = new System.Drawing.Size(282, 181);
             this.pictureBox5.TabIndex = 81;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox6
             // 
@@ -1309,6 +1310,7 @@ namespace Carl_Thabang_212_Coffee
             this.pictureBox6.Size = new System.Drawing.Size(294, 177);
             this.pictureBox6.TabIndex = 80;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // label50
             // 

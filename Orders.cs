@@ -175,5 +175,15 @@ namespace Carl_Thabang_212_Coffee
         {
             cart("Grilled Cheese & Tartar Sauce", 42m);
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            cart("Toasted Ham and Avocado", 38m);
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            cart("Tuna Sandwich", 34m);
+        }
     }
 }
