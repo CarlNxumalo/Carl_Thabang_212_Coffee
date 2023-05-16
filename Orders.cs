@@ -13,11 +13,12 @@ namespace Carl_Thabang_212_Coffee
 {
     public partial class Orders : Form
     {
-        SqlDataAdapter adap;
-        SqlCommand comm;
-        SqlConnection conn;
-        SqlDataReader dataReader;
-        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\THABANG\source\repos\New folder\BeetleCafDB.mdf;Integrated Security=True";
+        public SqlDataAdapter adap;
+        public SqlCommand comm;
+        public SqlConnection conn;
+        public SqlDataReader dataReader;
+        public DataSet ds;
+        public string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\THABANG\source\repos\New folder\BeetleCafDB.mdf;Integrated Security=True";
         decimal totalPrice = 0m;
         
 
@@ -47,6 +48,10 @@ namespace Carl_Thabang_212_Coffee
 
         private void Orders_Load(object sender, EventArgs e)
         {
+            conn = new SqlConnection(conStr);
+
+            conn.Open();
+            conn.Close();
             btnPrevious.Enabled = false;
             lstOrders.Items.Add("\t\tORDERS");
             lstOrders.Items.Add("=================================");
@@ -56,8 +61,16 @@ namespace Carl_Thabang_212_Coffee
         {
             lstOrders.Items.Add(item + "\t" + price.ToString("C"));
             totalPrice += price;
-            
 
+            string sql = $"INSERT INTO Orders(Item,Price) VALUES('{item}','{price}')";
+
+            comm = new SqlCommand(sql, conn);
+
+            adap = new SqlDataAdapter();
+
+            adap.InsertCommand = comm;
+            adap.InsertCommand.ExecuteNonQuery();
+       
         }
 
         private void pbAmericano_Click(object sender, EventArgs e)
@@ -119,11 +132,9 @@ namespace Carl_Thabang_212_Coffee
             }
             else
             {
+                
                 Receipt finalRec = new Receipt();
                 finalRec.ShowDialog();
-
-                //string sql = $"INSERT INTO Orders(Item,Price) VALUES('{}')"
-
             }
         }
 
@@ -142,6 +153,14 @@ namespace Carl_Thabang_212_Coffee
             cart("Chocolate Tarts", 30.50m);
         }
 
-        
+        private void pbDanish_Click(object sender, EventArgs e)
+        {
+            cart("Apricot Danish", 31m);
+        }
+
+        private void pbBaklava_Click(object sender, EventArgs e)
+        {
+            cart("Peppermint Tea", 26.45m);
+        }
     }
 }

@@ -896,6 +896,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbDanish.Size = new System.Drawing.Size(203, 192);
             this.pbDanish.TabIndex = 76;
             this.pbDanish.TabStop = false;
+            this.pbDanish.Click += new System.EventHandler(this.pbDanish_Click);
             // 
             // label14
             // 
@@ -1047,6 +1048,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbBaklava.Size = new System.Drawing.Size(203, 192);
             this.pbBaklava.TabIndex = 61;
             this.pbBaklava.TabStop = false;
+            this.pbBaklava.Click += new System.EventHandler(this.pbBaklava_Click);
             // 
             // pbCannoli
             // 
@@ -1268,7 +1270,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(337, 213);
+            this.label51.Location = new System.Drawing.Point(337, 271);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(50, 17);
             this.label51.TabIndex = 78;
