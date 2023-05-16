@@ -81,5 +81,39 @@ namespace Carl_Thabang_212_Coffee
         {
             cart("Cuppacino", 34.5m);
         }
+
+        private void pbBlackTea_Click(object sender, EventArgs e)
+        {
+            cart("Black Tea", 15.98m);
+        }
+
+        private void pbYellowTea_Click(object sender, EventArgs e)
+        {
+            cart("Yellow Tea", 18.75m);
+        }
+
+        private void pbGreenTea_Click(object sender, EventArgs e)
+        {
+            cart("Green Tea", 22.98m);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            cart("Peppermint Tea", 27m);
+        }
+
+        private void btnConfirm_Click(object sender, EventArgs e)
+        {
+            if(lstOrders.Items.Count==0)
+            {
+                lblChange.ForeColor = Color.Red;
+                lblChange.Text = "No item in Cart!";
+            }
+            else
+            {
+                Receipt finalRec = new Receipt();
+                finalRec.ShowDialog();
+            }
+        }
     }
 }

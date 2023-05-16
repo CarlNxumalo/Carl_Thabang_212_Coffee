@@ -130,11 +130,15 @@ namespace Carl_Thabang_212_Coffee
             this.pbGrilled = new System.Windows.Forms.PictureBox();
             this.tpCart = new System.Windows.Forms.TabPage();
             this.btnConfirm = new System.Windows.Forms.Button();
-            this.label53 = new System.Windows.Forms.Label();
+            this.lblChange = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.lstOrders = new System.Windows.Forms.ListBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -538,6 +542,10 @@ namespace Carl_Thabang_212_Coffee
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
+            this.tabPage2.Controls.Add(this.label77);
+            this.tabPage2.Controls.Add(this.label76);
+            this.tabPage2.Controls.Add(this.label75);
+            this.tabPage2.Controls.Add(this.label74);
             this.tabPage2.Controls.Add(this.label73);
             this.tabPage2.Controls.Add(this.label72);
             this.tabPage2.Controls.Add(this.label71);
@@ -657,7 +665,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(948, 507);
+            this.label21.Location = new System.Drawing.Point(948, 585);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(50, 17);
             this.label21.TabIndex = 65;
@@ -702,6 +710,7 @@ namespace Carl_Thabang_212_Coffee
             this.pictureBox3.Size = new System.Drawing.Size(203, 192);
             this.pictureBox3.TabIndex = 61;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // pbYellowTea
             // 
@@ -712,6 +721,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbYellowTea.Size = new System.Drawing.Size(203, 192);
             this.pbYellowTea.TabIndex = 60;
             this.pbYellowTea.TabStop = false;
+            this.pbYellowTea.Click += new System.EventHandler(this.pbYellowTea_Click);
             // 
             // pbGreenTea
             // 
@@ -722,6 +732,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbGreenTea.Size = new System.Drawing.Size(203, 192);
             this.pbGreenTea.TabIndex = 59;
             this.pbGreenTea.TabStop = false;
+            this.pbGreenTea.Click += new System.EventHandler(this.pbGreenTea_Click);
             // 
             // label57
             // 
@@ -737,7 +748,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(227, 225);
+            this.label58.Location = new System.Drawing.Point(227, 287);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(50, 17);
             this.label58.TabIndex = 57;
@@ -762,6 +773,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbBlackTea.Size = new System.Drawing.Size(203, 192);
             this.pbBlackTea.TabIndex = 55;
             this.pbBlackTea.TabStop = false;
+            this.pbBlackTea.Click += new System.EventHandler(this.pbBlackTea_Click);
             // 
             // tabPage3
             // 
@@ -1235,7 +1247,7 @@ namespace Carl_Thabang_212_Coffee
             // 
             this.tpCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
             this.tpCart.Controls.Add(this.btnConfirm);
-            this.tpCart.Controls.Add(this.label53);
+            this.tpCart.Controls.Add(this.lblChange);
             this.tpCart.Controls.Add(this.btnRemove);
             this.tpCart.Controls.Add(this.lstOrders);
             this.tpCart.Location = new System.Drawing.Point(4, 25);
@@ -1252,16 +1264,17 @@ namespace Carl_Thabang_212_Coffee
             this.btnConfirm.TabIndex = 39;
             this.btnConfirm.Text = "Confirm order";
             this.btnConfirm.UseVisualStyleBackColor = true;
+            this.btnConfirm.Click += new System.EventHandler(this.btnConfirm_Click);
             // 
-            // label53
+            // lblChange
             // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Bauhaus 93", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(22, 14);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(464, 43);
-            this.label53.TabIndex = 38;
-            this.label53.Text = "Confirm or Remove orders:";
+            this.lblChange.AutoSize = true;
+            this.lblChange.Font = new System.Drawing.Font("Bauhaus 93", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblChange.Location = new System.Drawing.Point(22, 14);
+            this.lblChange.Name = "lblChange";
+            this.lblChange.Size = new System.Drawing.Size(464, 43);
+            this.lblChange.TabIndex = 38;
+            this.lblChange.Text = "Confirm or Remove orders:";
             // 
             // btnRemove
             // 
@@ -1301,6 +1314,42 @@ namespace Carl_Thabang_212_Coffee
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(329, 287);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(54, 17);
+            this.label74.TabIndex = 79;
+            this.label74.Text = "R15,98";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(1049, 287);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(54, 17);
+            this.label75.TabIndex = 80;
+            this.label75.Text = "R18,75";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(1049, 585);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(34, 17);
+            this.label76.TabIndex = 81;
+            this.label76.Text = "R27";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(329, 585);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(54, 17);
+            this.label77.TabIndex = 82;
+            this.label77.Text = "R22,98";
             // 
             // Orders
             // 
@@ -1360,7 +1409,7 @@ namespace Carl_Thabang_212_Coffee
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tpCart;
         private System.Windows.Forms.Button btnConfirm;
-        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label lblChange;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.ListBox lstOrders;
         private System.Windows.Forms.Button btnNext;
@@ -1454,5 +1503,9 @@ namespace Carl_Thabang_212_Coffee
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label77;
     }
 }
