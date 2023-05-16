@@ -129,7 +129,19 @@ namespace Carl_Thabang_212_Coffee
 
         private void pbCroissant_Click(object sender, EventArgs e)
         {
-            cart("Peppermint Tea", 27m);
+            cart("Croissant", 27m);
         }
+
+        private void pbCannoli_Click(object sender, EventArgs e)
+        {
+            cart("Cannoli", 24m);
+        }
+
+        private void pbChoco_Click(object sender, EventArgs e)
+        {
+            cart("Chocolate Tarts", 30.50m);
+        }
+
+        
     }
 }

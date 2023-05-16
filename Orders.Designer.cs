@@ -139,6 +139,12 @@ namespace Carl_Thabang_212_Coffee
             this.lstOrders = new System.Windows.Forms.ListBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -814,6 +820,12 @@ namespace Carl_Thabang_212_Coffee
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
+            this.tabPage3.Controls.Add(this.label82);
+            this.tabPage3.Controls.Add(this.label81);
+            this.tabPage3.Controls.Add(this.label80);
+            this.tabPage3.Controls.Add(this.label79);
+            this.tabPage3.Controls.Add(this.label78);
+            this.tabPage3.Controls.Add(this.label53);
             this.tabPage3.Controls.Add(this.label60);
             this.tabPage3.Controls.Add(this.label61);
             this.tabPage3.Controls.Add(this.label62);
@@ -964,6 +976,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbChoco.Size = new System.Drawing.Size(203, 192);
             this.pbChoco.TabIndex = 68;
             this.pbChoco.TabStop = false;
+            this.pbChoco.Click += new System.EventHandler(this.pbChoco_Click);
             // 
             // label31
             // 
@@ -1044,6 +1057,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbCannoli.Size = new System.Drawing.Size(203, 192);
             this.pbCannoli.TabIndex = 60;
             this.pbCannoli.TabStop = false;
+            this.pbCannoli.Click += new System.EventHandler(this.pbCannoli_Click);
             // 
             // pbEclair
             // 
@@ -1352,6 +1366,60 @@ namespace Carl_Thabang_212_Coffee
             this.btnPrevious.UseVisualStyleBackColor = true;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(298, 219);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(54, 17);
+            this.label53.TabIndex = 80;
+            this.label53.Text = "R27,00";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(755, 220);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(54, 17);
+            this.label78.TabIndex = 81;
+            this.label78.Text = "R24,00";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(1191, 204);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(54, 17);
+            this.label79.TabIndex = 82;
+            this.label79.Text = "R30,50";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(755, 490);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(54, 17);
+            this.label80.TabIndex = 83;
+            this.label80.Text = "R26,75";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(308, 490);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(54, 17);
+            this.label81.TabIndex = 84;
+            this.label81.Text = "R19,00";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(1191, 476);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(54, 17);
+            this.label82.TabIndex = 85;
+            this.label82.Text = "R31,00";
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1508,5 +1576,11 @@ namespace Carl_Thabang_212_Coffee
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label53;
     }
 }
