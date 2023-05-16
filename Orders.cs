@@ -170,5 +170,10 @@ namespace Carl_Thabang_212_Coffee
         {
             cart("Peppermint Tea", 26.45m);
         }
+
+        private void pbGrilled_Click(object sender, EventArgs e)
+        {
+            cart("Grilled Cheese & Tartar Sauce", 42m);
+        }
     }
 }

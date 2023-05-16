@@ -90,6 +90,12 @@ namespace Carl_Thabang_212_Coffee
             this.label59 = new System.Windows.Forms.Label();
             this.pbBlackTea = new System.Windows.Forms.PictureBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
@@ -139,12 +145,6 @@ namespace Carl_Thabang_212_Coffee
             this.lstOrders = new System.Windows.Forms.ListBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -857,6 +857,60 @@ namespace Carl_Thabang_212_Coffee
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Pastries";
             // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(1191, 476);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(54, 17);
+            this.label82.TabIndex = 85;
+            this.label82.Text = "R31,00";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(308, 490);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(54, 17);
+            this.label81.TabIndex = 84;
+            this.label81.Text = "R19,00";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(755, 490);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(54, 17);
+            this.label80.TabIndex = 83;
+            this.label80.Text = "R26,75";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(1191, 204);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(54, 17);
+            this.label79.TabIndex = 82;
+            this.label79.Text = "R30,50";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(755, 220);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(54, 17);
+            this.label78.TabIndex = 81;
+            this.label78.Text = "R24,00";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(298, 219);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(54, 17);
+            this.label53.TabIndex = 80;
+            this.label53.Text = "R27,00";
+            // 
             // label60
             // 
             this.label60.AutoSize = true;
@@ -1295,6 +1349,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbGrilled.Size = new System.Drawing.Size(294, 192);
             this.pbGrilled.TabIndex = 76;
             this.pbGrilled.TabStop = false;
+            this.pbGrilled.Click += new System.EventHandler(this.pbGrilled_Click);
             // 
             // tpCart
             // 
@@ -1367,60 +1422,6 @@ namespace Carl_Thabang_212_Coffee
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(298, 219);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(54, 17);
-            this.label53.TabIndex = 80;
-            this.label53.Text = "R27,00";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(755, 220);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(54, 17);
-            this.label78.TabIndex = 81;
-            this.label78.Text = "R24,00";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(1191, 204);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(54, 17);
-            this.label79.TabIndex = 82;
-            this.label79.Text = "R30,50";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(755, 490);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(54, 17);
-            this.label80.TabIndex = 83;
-            this.label80.Text = "R26,75";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(308, 490);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(54, 17);
-            this.label81.TabIndex = 84;
-            this.label81.Text = "R19,00";
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(1191, 476);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(54, 17);
-            this.label82.TabIndex = 85;
-            this.label82.Text = "R31,00";
             // 
             // Orders
             // 
