@@ -31,5 +31,10 @@ namespace Carl_Thabang_212_Coffee
         {
 
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

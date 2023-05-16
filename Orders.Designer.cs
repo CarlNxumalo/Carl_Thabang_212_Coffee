@@ -128,7 +128,7 @@ namespace Carl_Thabang_212_Coffee
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.pbGrilled = new System.Windows.Forms.PictureBox();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tpCart = new System.Windows.Forms.TabPage();
             this.btnConfirm = new System.Windows.Forms.Button();
             this.label53 = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
@@ -158,7 +158,7 @@ namespace Carl_Thabang_212_Coffee
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGrilled)).BeginInit();
-            this.tabPage5.SuspendLayout();
+            this.tpCart.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -167,7 +167,7 @@ namespace Carl_Thabang_212_Coffee
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tpCart);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -469,6 +469,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbIcedCoffee.Size = new System.Drawing.Size(203, 192);
             this.pbIcedCoffee.TabIndex = 21;
             this.pbIcedCoffee.TabStop = false;
+            this.pbIcedCoffee.Click += new System.EventHandler(this.pbIcedCoffee_Click);
             // 
             // pbIrishCoffee
             // 
@@ -1227,18 +1228,18 @@ namespace Carl_Thabang_212_Coffee
             this.pbGrilled.TabIndex = 76;
             this.pbGrilled.TabStop = false;
             // 
-            // tabPage5
+            // tpCart
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
-            this.tabPage5.Controls.Add(this.btnConfirm);
-            this.tabPage5.Controls.Add(this.label53);
-            this.tabPage5.Controls.Add(this.btnRemove);
-            this.tabPage5.Controls.Add(this.lstOrders);
-            this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1574, 661);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Cart";
+            this.tpCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
+            this.tpCart.Controls.Add(this.btnConfirm);
+            this.tpCart.Controls.Add(this.label53);
+            this.tpCart.Controls.Add(this.btnRemove);
+            this.tpCart.Controls.Add(this.lstOrders);
+            this.tpCart.Location = new System.Drawing.Point(4, 25);
+            this.tpCart.Name = "tpCart";
+            this.tpCart.Size = new System.Drawing.Size(1574, 661);
+            this.tpCart.TabIndex = 4;
+            this.tpCart.Text = "Cart";
             // 
             // btnConfirm
             // 
@@ -1337,8 +1338,8 @@ namespace Carl_Thabang_212_Coffee
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGrilled)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
+            this.tpCart.ResumeLayout(false);
+            this.tpCart.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1354,7 +1355,7 @@ namespace Carl_Thabang_212_Coffee
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tpCart;
         private System.Windows.Forms.Button btnConfirm;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Button btnRemove;

@@ -12,7 +12,8 @@ namespace Carl_Thabang_212_Coffee
 {
     public partial class Orders : Form
     {
-        decimal price = 0m;
+        decimal totalPrice = 0m;
+        
 
         public Orders()
         {
@@ -41,21 +42,29 @@ namespace Carl_Thabang_212_Coffee
         private void Orders_Load(object sender, EventArgs e)
         {
             btnPrevious.Enabled = false;
+            lstOrders.Items.Add("\t\tORDERS");
+            lstOrders.Items.Add("=================================");
         }
 
-        private void cart(decimal price)
+        private void cart(string item,decimal price)
         {
-            lstOrders.Items.Add("Americano" + "\t" + price.ToString("C"));
+            lstOrders.Items.Add(item + "\t" + price.ToString("C"));
+            totalPrice += price;
         }
 
         private void pbAmericano_Click(object sender, EventArgs e)
         {
-            cart(30.90m);
+            cart("Americano",30.90m);
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
             lstOrders.Items.RemoveAt(lstOrders.SelectedIndex);
+        }
+
+        private void pbIcedCoffee_Click(object sender, EventArgs e)
+        {
+            cart("Iced Coffee", 28.99m);
         }
     }
 }
