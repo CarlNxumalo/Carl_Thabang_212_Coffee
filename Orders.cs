@@ -66,5 +66,20 @@ namespace Carl_Thabang_212_Coffee
         {
             cart("Iced Coffee", 28.99m);
         }
+
+        private void pbDripCoffee_Click(object sender, EventArgs e)
+        {
+            cart("Drip Coffee", 31.21m);
+        }
+
+        private void pbIrishCoffee_Click(object sender, EventArgs e)
+        {
+            cart("Irish Coffee", 31.21m);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            cart("Cuppacino", 34.5m);
+        }
     }
 }
