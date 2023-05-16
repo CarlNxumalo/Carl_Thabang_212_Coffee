@@ -65,6 +65,10 @@ namespace Carl_Thabang_212_Coffee
             this.label1 = new System.Windows.Forms.Label();
             this.pbAmericano = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
@@ -135,10 +139,6 @@ namespace Carl_Thabang_212_Coffee
             this.lstOrders = new System.Windows.Forms.ListBox();
             this.btnNext = new System.Windows.Forms.Button();
             this.btnPrevious = new System.Windows.Forms.Button();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -572,6 +572,42 @@ namespace Carl_Thabang_212_Coffee
             this.tabPage2.Size = new System.Drawing.Size(1574, 661);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Tea";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(329, 585);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(54, 17);
+            this.label77.TabIndex = 82;
+            this.label77.Text = "R22,98";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(1049, 585);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(34, 17);
+            this.label76.TabIndex = 81;
+            this.label76.Text = "R27";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(1049, 287);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(54, 17);
+            this.label75.TabIndex = 80;
+            this.label75.Text = "R18,75";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(329, 287);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(54, 17);
+            this.label74.TabIndex = 79;
+            this.label74.Text = "R15,98";
             // 
             // label73
             // 
@@ -1058,6 +1094,7 @@ namespace Carl_Thabang_212_Coffee
             this.pbCroissant.Size = new System.Drawing.Size(203, 192);
             this.pbCroissant.TabIndex = 55;
             this.pbCroissant.TabStop = false;
+            this.pbCroissant.Click += new System.EventHandler(this.pbCroissant_Click);
             // 
             // tabPage4
             // 
@@ -1314,42 +1351,6 @@ namespace Carl_Thabang_212_Coffee
             this.btnPrevious.Text = "Previous";
             this.btnPrevious.UseVisualStyleBackColor = true;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(329, 287);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(54, 17);
-            this.label74.TabIndex = 79;
-            this.label74.Text = "R15,98";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(1049, 287);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(54, 17);
-            this.label75.TabIndex = 80;
-            this.label75.Text = "R18,75";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(1049, 585);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(34, 17);
-            this.label76.TabIndex = 81;
-            this.label76.Text = "R27";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(329, 585);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(54, 17);
-            this.label77.TabIndex = 82;
-            this.label77.Text = "R22,98";
             // 
             // Orders
             // 

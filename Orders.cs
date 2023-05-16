@@ -7,11 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Carl_Thabang_212_Coffee
 {
     public partial class Orders : Form
     {
+        SqlDataAdapter adap;
+        SqlCommand comm;
+        SqlConnection conn;
+        SqlDataReader dataReader;
+        string conStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\THABANG\source\repos\New folder\BeetleCafDB.mdf;Integrated Security=True";
         decimal totalPrice = 0m;
         
 
@@ -50,6 +56,8 @@ namespace Carl_Thabang_212_Coffee
         {
             lstOrders.Items.Add(item + "\t" + price.ToString("C"));
             totalPrice += price;
+            
+
         }
 
         private void pbAmericano_Click(object sender, EventArgs e)
@@ -113,7 +121,15 @@ namespace Carl_Thabang_212_Coffee
             {
                 Receipt finalRec = new Receipt();
                 finalRec.ShowDialog();
+
+                //string sql = $"INSERT INTO Orders(Item,Price) VALUES('{}')"
+
             }
+        }
+
+        private void pbCroissant_Click(object sender, EventArgs e)
+        {
+            cart("Peppermint Tea", 27m);
         }
     }
 }

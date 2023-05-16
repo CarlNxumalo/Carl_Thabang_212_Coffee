@@ -29,17 +29,29 @@ namespace Carl_Thabang_212_Coffee
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstReceipt = new System.Windows.Forms.ListBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lstReceipt
+            // dataGridView1
             // 
-            this.lstReceipt.FormattingEnabled = true;
-            this.lstReceipt.ItemHeight = 16;
-            this.lstReceipt.Location = new System.Drawing.Point(218, 31);
-            this.lstReceipt.Name = "lstReceipt";
-            this.lstReceipt.Size = new System.Drawing.Size(294, 388);
-            this.lstReceipt.TabIndex = 0;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(57, 85);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(380, 333);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(121, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Your final Order:";
             // 
             // Receipt
             // 
@@ -47,16 +59,20 @@ namespace Carl_Thabang_212_Coffee
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(176)))), ((int)(((byte)(148)))));
             this.ClientSize = new System.Drawing.Size(774, 497);
-            this.Controls.Add(this.lstReceipt);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dataGridView1);
             this.Name = "Receipt";
             this.Text = "Receipt";
             this.Load += new System.EventHandler(this.Receipt_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox lstReceipt;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label1;
     }
 }
