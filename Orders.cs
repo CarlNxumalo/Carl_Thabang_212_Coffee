@@ -59,6 +59,12 @@ namespace Carl_Thabang_212_Coffee
 
         private void cart(string item,decimal price)
         {
+            if(conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+            }
+            
+
             lstOrders.Items.Add(item + "\t" + price.ToString("C"));
             totalPrice += price;
 
@@ -70,6 +76,8 @@ namespace Carl_Thabang_212_Coffee
 
             adap.InsertCommand = comm;
             adap.InsertCommand.ExecuteNonQuery();
+
+            conn.Close();
        
         }
 
